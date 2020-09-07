@@ -1,0 +1,30 @@
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}
+#container{
+    background-color:#ef0648;
+    min-height: 800px;
+    border-radius: 3px;
+    width: 75%;
+    padding: 30px;
+    margin: 0 auto;
+}
+.blockMKR {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 12px;
+}
+
+.active, .blockMKR:hover {
+    background-color: #ccc;
+}
+/* #ef0648 */

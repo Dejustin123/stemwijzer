@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>stemwijzer</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="background">
+
+<div id="container" >
+    <h1 id="stemwijzer"></h1>
+    <h2 id="title">StemWijzer Tweede Kamer.<br> Test uw voorkeur aan de hand van 30 stellingen</h2>
+    <h1 id="titel"></h1>
+    <p id="stelling"></p>
+    <div id="buttons">
+        <button id="terug" onclick="back()" class="btn btn-dark">Vraag terug</button>
+        <button id="start" onclick="StartStemmen()" class="btn btn-dark">start</button>
+        <div class="row p-3">
+            <button id="eens" onclick="stem('eens')" class="btn btn-dark m-1">Eens</button>
+            <button id="oneens" onclick="stem('oneens')" class="btn btn-dark m-1">Oneens</button>
+            <button id="geen" onclick="stem('geen')" class="btn btn-dark m-1">Geen van beide</button>
+            <button id="slaover" onclick="stem()" class="btn btn-link">Sla over</button>
+            <button id="extra" onclick="extraWeight()" class="btn btn-dark m-1">Extra gewicht op de vraag?</button>
+            <button id="pq" class="btn btn-dark m-1"></button>
+        </div>
+    </div>
+    <button id="partiesButton" onclick="toggleAllPartijen('opinion')" class="btn btn-dark m-3">Partij meningen.</button>
+    <button id="bigPartiesButton" onclick="toggleAllPartijen('big')" class="btn btn-dark m-3">Zie grote partijen.</button>
+    <button id="secularPartiesButton" onclick="toggleAllPartijen('secular')" class="btn btn-dark m-3">Zie seculiere partijen.</button>
+
+    <div id="partiesInfo"></div>
+    <div id="opinionParties" class="row" style="display: none;">
+        <div id="collEens" class="col-md-3" style="display: inline-block;"></div>
+        <div id="collOneens" class="col-md-3" style="display: inline-block;"></div>
+        <div id="collGeen" class="col-md-3" style="display: inline-block;"></div>
+    </div>
+    <div id="bigParties" style="display: none;">
+    </div>
+    <div id="secularParties" style="display: none;">
+    </div>
+</div>
+
+<script src="data.js"></script>
+<script src="script.js"></script>
+<script src="style.js"></script>
+</body>
+</html>
